@@ -2,51 +2,96 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>expify me</title>
-<<<<<<< HEAD
-<style>
-body{
-	background-color:#000;
-	
-	
+<title>Exptify</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
-#container{
-	text-align:center;
-	
-	
-}
-.inside{
-	margin-left:auto;
-	margin-right:auto;
-	width:500px;
-	font-family:Arial, Helvetica, sans-serif;
-	size:13px;
-	color:#FFF;
-	text-align:left;
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 
-</style>
-
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
-<div id="container">
-<div class="inside">
-		
-		<p>Expify-<br />
-		  <br />
-An experiment in social causality and continuality – socialize on a path along being everywhere at once.</p>
-<p>Experience omnipresence in the connections listening to music brings: artists, album, and song. As you push through your listening adventures your temporary social network follows along. </p>
-<p>Breaking the bounds, the expify plug-in also creates temporary node connections based on new genre definitions such as moods or subjects. Be connected to people listening to happiness or linking music to people and events.</p>
-<p>Coming moments from now...</p>
-		
-	</div>
+<body onload="MM_preloadImages('images/button_hover.png')">
+
+	<div id="content">
+	  <div id="left_col">
+
+      <div id="left_top_header">
+          	<span class="text_chat">Text chat</span>
+            <div style="float:right; position:relative; width:250px; top:-20px;">	
+                <form id="form1" name="form1" method="post" action="" style="float:right; margin-right:10px;top:0;">
+                    <label>
+                      <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_0" />
+                      Receive audio
+                    </label>
+                    <label>
+                      <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_1" />
+                      Chat sounds
+                    </label>               
+                </form>
+            </div>	
+            
+   	    </div>
+        <div id="left_top"></div>
+	    <div id="left_middle">
+  		  <input name="History" type="button" value="History" />
+                <input name="Report spam" type="button" value="Report spam" />
+                <input name="Clear chat log" type="button" value="Clear chat log" />
+                <input name="Full screen" type="button" value="Full screen" />
+        </div>
+<div id="left_bottom">
+          	<div id="chat_box">
+           	  	<textarea name="chat box" cols="" rows="3" id="chat box" 
+                	style="
+                    width:420px;
+                    -moz-border-radius: 8px;
+                    border-radius: 8px;
+                    border:1px solid #333;
+                    text-align:left;">Do you exptify today?
+                </textarea>
+			</div>
+            <div id="button">
+       	    	<input name="Exptify it!" type="submit" value="Exptify it!" />
+      </div>
+        </div>
+        </div>
+
+  		<div id="right_col">        
+        	<div id="video">
+            	<img src="images/video.jpg" width="250" height="200" />
+            </div>
+            <div id="next_stop">
+                <input name="Next" type="button" value="Next" />
+                <input name="Stop" type="button" value="Stop" />
+            </div>
+            <div id="user_list_header">
+	          	<span class="text_chat">User list</span>
+            </div>            			
+            <div id="user_list">
+            
+            </div>
+        </div>
+
 </div>
-=======
-</head>
 
-<body>
->>>>>>> e725f6c4b971704d7cbb9f9e178be6e8965f02d4
 </body>
 </html>
