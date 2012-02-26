@@ -115,8 +115,10 @@ $('#chat_text').append(geturl('mytext.html'));
 var auto_refresh = setInterval(
 function ()
 {
-$("#chatting").prop({ scrollTop: $("#chatting").attr("scrollHeight") });
+
 $('#chat_text').append(geturl('/get?key=burrito'));  
+ $("#chatting").animate({ scrollTop: $("#chatting").attr("scrollHeight") - $('#chatting').height() }, 3000);
+
 
 }, 2000); 
 
