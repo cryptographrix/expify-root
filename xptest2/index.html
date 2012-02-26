@@ -108,22 +108,22 @@ return r;
 }  
   
 
-function changediv() {  
+/*function changediv() {  
 $('#chat_text').append(geturl('mytext.html'));  
-} 
+} */
 
-/*var auto_refresh = setInterval(
+var auto_refresh = setInterval(
 function ()
 {
-$('#chat_roomname').append(geturl('/get?key=burrito'));  
-}, 2000); */
+$('#chat_text').append(geturl('/get?key=burrito'));  
+}, 2000); 
 
 
 
 </script>
 </head>
 
-<body onload="changediv();MM_preloadImages('images/button_hover.png');">
+<body onload="MM_preloadImages('images/button_hover.png');">
 
 	<div id="content">
 	  <div id="left_col">
