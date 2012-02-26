@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--Start Spotify code-->
+<meta charset="utf-8">
+    <title>Xpify Me!aaq</title>
+<!--END Spotify code-->
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<!--<link rel="stylesheet" type="text/css" media="all" href="stylechat.css" />
+<link rel="stylesheet" href="sp://import/css/adam.css">
+<link rel="stylesheet" href="xpify.css">-->
+
+
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+
+var auto_refresh = setInterval(
+function ()
+{
+	
+	
+$.ajax({
+  url: 'http://xpify.com/get?key=burrito',
+  success: function( data ) {
+	  $('#chat_text').append(data);  
+	  $("#chatting2").animate({ scrollTop: $("#chatting2").prop("scrollHeight") - $('#chatting2').height() }, 1000);
+ 
+  }
+});
+}, 10000); 
+
+
+
+</script>
+
+<style type="text/css">
+#chatting2 {
+	width:466px; /* iframe size */
+	height:415px; /* iframe size */
+	position:relative;
+	/*border-top:0;
+	border-left:1px solid #333;
+	border-right:1px solid #333;
+	border-bottom:1px solid #333;*/
+	/*margin:0 auto auto 20px;*/
+	background: #FFF;
+	/*opacity:0.9;
+	filter:alpha(opacity=90);*/ /* For IE8 and earlier */
+	/*-moz-border-radius-bottomleft: 8px;
+	border-bottom-left-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-right-radius: 8px;*/
+	}
+
+
+</style>
+
+</head>
+
+<body>
+
+	
+        <div id="chatting2" style="overflow:auto;padding-bottom:20px;">
+        	<div id="chat_roomname">[B�n Fra Helvete - Live]
+            	<span class="chat_username">handle:<br />
+                	<span class="chat_text" id="chat_text">
+                    	oHai
+                    </span>
+                </span>
+            </div>
+        </div>
+	 
+
+
+</body>
+</html>
