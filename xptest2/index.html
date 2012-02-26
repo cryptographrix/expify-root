@@ -117,10 +117,10 @@ function ()
 {
 
 $('#chat_text').append(geturl('/get?key=burrito'));  
- $("#chatting").animate({ scrollTop: $("#chatting").attr("scrollHeight") - $('#chatting').height() }, 3000);
+ $("#chatting").animate({ scrollTop: $("#chatting").prop("scrollHeight") - $('#chatting').height() }, 1000);
 
 
-}, 2000); 
+}, 5000); 
 
 
 
