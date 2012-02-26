@@ -18,6 +18,15 @@ function changediv() {
 $('#chatroom').append(geturl('/get?key=burrito'));  
 } 
 
+
+var auto_refresh = setInterval(
+function ()
+{
+$('#chatroom').append(geturl('/get?key=burrito'));  
+}, 5000); 
+
+
+
 </script>
 <body onload="changediv();" bgcolor="#CCCCCC">
 <div>
