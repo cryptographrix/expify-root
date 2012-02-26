@@ -72,7 +72,7 @@ body {
 	border-left:1px solid #333;
 	border-right:1px solid #333;
 	border-bottom:1px solid #333;
-	margin:0 auto auto 20px;
+	margin:0 auto 10px 20px;
 	background: #FFF;
 	opacity:0.9;
 	filter:alpha(opacity=90); /* For IE8 and earlier */
@@ -104,6 +104,7 @@ body {
 	font-size:12px;
 	margin:0 10px 0 10px;
 	padding-top:5px;
+	
  
 	}
 .chat_username {
