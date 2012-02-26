@@ -115,24 +115,9 @@ $('#chat_text').append(geturl('mytext.html'));
 var auto_refresh = setInterval(
 function ()
 {
-	
-	
-$.ajax({
-  url: 'http://xpify.com/get?key=burrito',
-  success: function( data ) {
-	  $('#chat_text').append(data);  
-	  $("#chatting").animate({ scrollTop: $("#chatting").prop("scrollHeight") - $('#chatting').height() }, 1000);
- 
-  }
-});
-	
-	
-	
-	
-	
-	
-	
 
+$('#chat_text').append(geturl('/get?key=burrito'));  
+ $("#chatting").animate({ scrollTop: $("#chatting").prop("scrollHeight") - $('#chatting').height() }, 1000);
 
 
 }, 5000); 
@@ -148,7 +133,7 @@ $.ajax({
 	  <div id="left_col">
 
       <div id="left_top_header" style="overflow: hidden;">
-          	<span class="text_chat">Text chats
+          	<span class="text_chat">Text chat
                 <form id="form1" name="form1" method="post"  style="float:right; margin-right:10px;">
                     <label>
                       <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_0" />
@@ -169,7 +154,7 @@ $.ajax({
                     	oHai
                     </span>
                 </span>
-            </div>
+            stu</div>
         </div>
 	    <div id="left_middle">
     <input name="History" type="button" value="History" />

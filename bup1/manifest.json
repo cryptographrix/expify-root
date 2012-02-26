@@ -1,10 +1,10 @@
 {
     "BundleType": "Application",
     "AppIcon": {
-        "36x18": "xpify.png"
+        "36x18": "expify.png"
     },
     "AppName": {
-        "en": "xpify"
+        "en": "expify"
     },
     "SupportedLanguages": [
         "en"

@@ -64,7 +64,7 @@ body {
 	-moz-border-radius-topright: 8px;
 	border-top-right-radius: 8px;
 	}
-#chatting {
+#left_top {
 	width:500px;
 	height:450px;
 	position:relative;
@@ -99,24 +99,6 @@ body {
 	-moz-border-radius-topleft: 8px;
 	border-top-left-radius: 8px;
 	}
-#chat_roomname {
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-	margin:0 10px 0 10px;
-	padding-top:5px;
-	
- 
-	}
-.chat_username {
- 	}	
-
-.chat_text {
-
-	}	
-
-
-
-
 
 #left_middle {
 	width:500px;
