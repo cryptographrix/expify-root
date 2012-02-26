@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--Start Spotify code-->
+<meta charset="utf-8">
+    <title>Xpify Me!!!!!</title>
+<!--END Spotify code-->
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" href="sp://import/css/adam.css">
+<link rel="stylesheet" href="xpify.css">
+
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+<script  language="javascript" type="text/javascript">
+
+
+
+
+function nickfocus(){
+	document.getElementById("nickname").value="";
+	
+}
+function nickkey(){
+	key=document.getElementById("nickname").value;
+	key=key+"";
+	key=key.replace(/\s/g,'');
+	document.getElementById("nickname").value=key;
+}
+
+var announcecount=1;
+
+function pushtext2(fromid, toid){
+
+
+  var mynickname=document.getElementById("nickname").value;
+
+  if((mynickname=="nickname")||(mynickname=="")){
+     document.getElementById("nickname").style.background="#FF0000";
+  }else{
+	   document.getElementById("nickname").disabled=true;
+	   document.getElementById("nickname").style.background="#33FF33";
+  
+  		announcecount++;
+  		var newannounce="announce"+announcecount;
+  		var newspan = document.createElement('span');
+  		var spanIdName = 'my'+announcecount;
+  		newspan.setAttribute('id',spanIdName);
+  		newspan.innerHTML = document.getElementById(fromid).value+"<br>";
+  		if(document.getElementById(fromid).value!=""){
+  			document.getElementById(toid).appendChild(newspan);
+  			document.getElementById(fromid).value="";
+  	}
+  
+  }
+
+	
+}
+</script>
+
+
+    <script type="text/javascript">
+	function xpifyme(){
+		sp = getSpotifyApi(1); 
+		xpify = sp.require('xpify'); 
+		xpify.init();
+	}
+	
+	</script>
+
+<script type="text/javascript">
+function geturl(addr) {  
+var r = $.ajax({  
+ type: 'GET',  
+ url: addr,  
+ async: false  
+}).responseText;  
+return r;  
+}  
+  
+
+
+
+var auto_refresh = setInterval(
+function ()
+{
+$('#chat_text').append(geturl('/get?key=burrito'));  
+}, 5000); 
+
+
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/button_hover.png');">
+
+	<div id="content">
+	  <div id="left_col">
+
+      <div id="left_top_header" style="overflow: hidden;">
+          	<span class="text_chat">Text chat
+                <form id="form1" name="form1" method="post"  style="float:right; margin-right:10px;">
+                    <label>
+                      <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_0" />
+                      Receive audio
+                    </label>
+                    <label>
+                      <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1_1" />
+                      Chat sounds
+                    </label>               
+                </form>
+            </span>	
+            
+   	    </div>
+        <div id="chatting">
+        	<div id="chat_roomname">[B�n Fra Helvete - Live]
+            	<span class="chat_username">handle:
+                	<span class="chat_text">
+                    	oHai
+                    </span>
+                </span>
+            </div>
+        </div>
+	    <div id="left_middle">
+  		  <input name="History" type="button" value="History" />
+                <input name="Report spam" type="button" value="Report spam" />
+                <input name="Clear chat log" type="button" value="Clear chat log" />
+                <input name="Full screen" type="button" value="Full screen" />
+        </div>
+		<div id="left_bottom">
+          	<div id="chat_box">
+           	  	<textarea name="chatbox" cols="" rows="3" id="chatbox" 
+                	style="
+                    width:400px;
+                    -moz-border-radius: 8px;
+                    border-radius: 8px;
+                    border:1px solid #333;
+                    text-align:left;">Do you Xpify today?
+                </textarea>
+			</div>
+            <div id="button" style="margin-bottom:5px;">
+            	<input name="nickname" id="nickname" type="text" style="width:75px;" value="nickname" onfocus="nickfocus();" onkeyup="nickkey();"/><br />
+            </div>
+            <div id="button">
+              <input name="Exptify it!" type="submit" value="XPIFY it!" onclick="pushtext2('chatbox','chatting');" />
+      		</div>
+        </div>
+      </div>
+
+  		<div id="right_col">        
+        	<div id="video">
+            	<img src="images/video.jpg" width="250" height="200" />
+            </div>
+            <div id="next_stop">
+                <input name="Next" type="button" value="Next" />
+                <input name="Stop" type="button" value="Stop" />
+            </div>
+            <div id="user_list_header">
+	          	<span class="text_chat">User list</span>
+            </div>            			
+            <div id="user_list">
+            
+            </div>
+        </div>
+
+</div>
+
+
+</body>
+</html>
