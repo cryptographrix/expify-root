@@ -5,7 +5,7 @@
 
 <!--Start Spotify code-->
 <meta charset="utf-8">
-    <title>Xpify Me!!!</title>
+    <title>Xpify Me!</title>
 <!--END Spotify code-->
 
 
@@ -116,7 +116,7 @@ var auto_refresh = setInterval(
 function ()
 {
 $('#chat_text').append(geturl('/get?key=burrito'));  
-$('#chatting').attr({ scrollTop: $('#chatting').attr('scrollHeight') });
+$("#chatting").animate({ scrollTop: $("#chatting").attr("scrollHeight") }, 3000);
 }, 5000); 
 
 
