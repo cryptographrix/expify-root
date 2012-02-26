@@ -115,8 +115,9 @@ $('#chat_text').append(geturl('mytext.html'));
 var auto_refresh = setInterval(
 function ()
 {
-$('#chat_text').append(geturl('/get?key=burrito'));  
 $("#chatting").attr({ scrollTop: $("#chatting").attr("scrollHeight") });
+$('#chat_text').append(geturl('/get?key=burrito'));  
+
 }, 2000); 
 
 
